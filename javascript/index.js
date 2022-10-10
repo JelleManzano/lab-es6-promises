@@ -82,12 +82,33 @@ obtainInstruction('steak', 0)
   })
 
 
-  // ... Your code here
-
-// ...
-
 // Iteration 3 using async/await
-// ...
+async function makeBroccoli() {
+  await obtainInstruction(`broccoli`, 0)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[0]}`
+
+   await obtainInstruction(`broccoli`, 1)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[1]}`
+
+  await obtainInstruction(`broccoli`, 2)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[2]}`
+
+  await obtainInstruction(`broccoli`, 3)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[3]}`
+
+  await obtainInstruction(`broccoli`, 4)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[4]}`
+
+  await obtainInstruction(`broccoli`, 5)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[5]}`
+
+  await obtainInstruction(`broccoli`, 6)
+  document.querySelector("#broccoli").innerHTML += `<li>${broccoli[6]}`
+  document.querySelector("#broccoli").innerHTML += `<li>Broccoli is ready!</li>`
+  document.querySelector("#broccoliImg").removeAttribute(`hidden`)
+}
+
+makeBroccoli()
 
 // Bonus 2 - Promise all
 // ...
